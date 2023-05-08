@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+
+/*==== ANIMATION FADE ====*/
+@-webkit-keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}}
+
+/*==== MAIN ====*/
+*, ::before, ::after { 
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+    background-image: url(assets/wallpapers/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+/*==== BARRE DE NAVIGATION ====*/
+.nav-container{
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(232, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: height 0.3s ease;
+    position: fixed;
+}
+
+/*Div Logo*/
+.nav-logo{
+    height: 78px;
+    display: flex;
+    justify-content: start;
+    margin-left: 40px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-right: 80px;
+}
+
+.nav-items{
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+
+.nav-button a{
+    font-weight: bold;
+    font-size: 19px;
+    color: #070606;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-button:hover a{
+    color:#00498D;
+    transition: all 0.1s ease-in-out;
+}
+
+.nav-button-active a{
+    font-weight: bold;
+    font-size: 20px;
+    color: #00498D;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+/* === SECTION LOISIRS === */
+
+section.sect-loisirs{
+    margin-top: 80px;
+    padding: 50px;
+    backdrop-filter: blur(1px);
+    
+}
+
+/* DIV LOISIRS */
+
+.loisirs{
+    background-color: rgb(232, 232, 232);
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.loisirs-title{
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(232, 232, 232);
+    margin-bottom: 40px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    height: 3vw;
+    padding: 5px;
+}
+
+/* CONTAINER 1 */
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+    height: 70vh;
+    }
+
+.container1 p{
+    text-align: justify;
+    font-size: 1vw;
+    letter-spacing: 1.5px;
+    line-height: 27px;
+}
+
+.container1 img{
+    width: 10%;
+}
+
+.container1-subtitles-prog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container1-subtitles-prog h1{
+    margin-right: 34%;
+}
+
+.container1-subtitles-music{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container1 h1{
+    text-align: center;
+    font-size: 1.6vw;
+}
+
+.container1-subtitles-music h1{
+    margin-left: 41.5%;
+}
+
+/* PROGRAMMATION */    
+    .programmation {
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: #00264D;
+        color: rgb(232, 232, 232);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        transition: 0.2s;
+    }
+
+    .programmation:hover{
+        transform: scale(1.04);
+        transition: 0.2s;
+    }
+
+    .programmation:hover img{
+        animation: ring 1.5s ease;
+    }
+
+
+/* MUSIQUE */
+    .musique {
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: #00264D;
+        color: rgb(232, 232, 232);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        transition: 0.2s;
+    }
+
+    .musique:hover{
+        transform: scale(1.04);
+        transition: 0.2s;
+    }
+
+    .musique:hover img{
+        animation: ring 1.5s ease;
+    }
+
+/* DIV VOYAGES */
+.voyages{
+    margin-top: 50px;
+    background-color: #00264D;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.voyages-title{
+    text-align: center;
+    font-size: 2vw;
+    color: rgb(232, 232, 232);
+    margin-bottom: 40px;
+    background-color: #2c2c2c;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    height: 3vw;
+    padding: 5px;
+}
+
+/* CONTAINER 2*/
+
+.container2 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+    height: 70vh;
+    }
+
+.container2 img{
+    width: 15%;
+}
+
+.container2-subtitles-italie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container2-subtitles-italie h1{
+    margin-right: 25%;
+}
+
+.container2-subtitles-vietnam{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container2-subtitles-vietnam h1{
+    margin-left: 41%;
+}
+
+.container2 span{
+    font-size: 1.2vw;
+    color: #273849;
+}
+
+    .container2 h1{
+        text-align: center;
+        font-size: 1.6vw;
+        margin-bottom: 20px;
+        color: #00264D;
+    }
+
+    .container2 p{
+        text-align: justify;
+        font-size: 1vw;
+        letter-spacing: 1.5px;
+        line-height: 27px;
+    }
+    
+    .italie {
+        grid-area: 1 / 1 / 2 / 2;
+        background-color: rgb(232, 232, 232);
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        transition: 0.2s;
+    }
+
+    .italie:hover{
+        transform: scale(1.04);
+        transition: 0.2s;
+    }
+
+    .italie:hover img{
+        animation: ring 1.5s ease;
+    }
+
+    .vietnam {
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: rgb(232, 232, 232);
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        transition: 0.2s;
+    }
+
+    .vietnam:hover{
+        transform: scale(1.04);
+        transition: 0.2s;
+    }
+
+    .vietnam:hover img{
+        animation: ring 1.5s ease;
+    }
+
+
+/* Animation des Logos */
+@keyframes ring {
+    0% {transform: rotate(35deg);}
+    12.5% {transform: rotate(-30deg);}
+    25% {transform: rotate(25deg);}
+    37.5% {transform: rotate(-20deg);}
+    50% {transform: rotate(15deg);}
+    62.5% {transform: rotate(-10deg);}
+    75% {transform: rotate(5deg);}
+    100% {transform: rotate(0deg);}
+}
+
+
+
+/*==== FOOTER ====*/
+.footer{
+    backdrop-filter: blur(2px);
+    border-top: 0.1px solid rgb(0, 0, 0);
+}
+
+.footer-credits{
+    margin-left: -10px;
+    width: 100%;
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+    

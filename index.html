@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="En Cours" />
+    <link rel="shortcut icon" href="assets/icons/icon.png">
+    <link href="style-index.css" rel="stylesheet" type="text/css" />
+    <script defer src="script.js"></script>
+    <title>Portfolio - Alexis JCR</title>
+</head>
+
+<body>
+
+    
+    <div class="nav-container">
+        <!-- Menu Dynamique -->
+        <div class="nav-burger-items" id="burger-item">
+            <ul>
+                <li class="nav-button">
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li class="nav-button">
+                    <a href="presentation.html">Qui Suis-je</a>
+                </li>
+                <li class="nav-button">
+                    <a href="formation.html">Formations</a>
+                </li>
+                <li class="nav-button">
+                    <a href="projets.html">Projets</a>
+                </li>
+                <li class="nav-button">
+                    <a href="loisirs.html">Loisirs</a>
+                </li>
+                <li class="nav-button">
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-burger">
+
+            <label class="burger" for="burger-button"><img src="assets/icons/menu.png" class="img-burger"></label>
+            <button id="burger-button" onclick="burgerclic()"></button>
+
+        </div>
+
+        <!-- Barre de Navigation -->
+
+        <a href="index.html"><img class="nav-logo" draggable="false" src="assets/icons/logo.png"></a>
+
+        <nav class="nav-items">
+            <ul>
+                <li class="nav-button-active"><a href="index.html">Accueil</a></li>
+                <li class="nav-button"><a href="formation.html">Formation & Expérience</a></li>
+                <li class="nav-button"><a href="projets.html">Projets</a></li>
+                <li class="nav-button"><a href="loisirs.html">Loisirs</a></li>
+                <li class="nav-button"><a href="contacts.html">Contacts</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <div class="container1">
+        <div class="container1-div1">
+            <h1>Bienvenue !</h1>
+            <h2>Je suis <br>Alexis Joncour</h2>
+            <a class="button" href="#container2" style="--color:#0052A2">À Propos de moi</a>
+        </div>
+
+        <div class="container1-div2">
+            <div class="div2-image">
+                <img draggable="false" src="assets/photos/photo1.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="container2" id="container2">
+        <div class="tabs">
+            <input type="radio" id="box qsj" name="slider" checked>
+            <input type="radio" id="box formation" name="slider">
+            <input type="radio" id="box loisirs" name="slider">
+    
+            <div class="buttons">
+                <label for="box qsj"></label>
+                <label for="box formation"></label>
+                <label for="box loisirs"></label>
+            </div>
+    
+            <div class="content">
+                <div class="box qsj">
+                    <div class="contentBx">
+                        <h2>Qui Suis-Je ?</h2>
+                        <p>Etudiant en <strong>BTS Système Numérique</strong> à La Croix Rouge La Salle, je suis
+                            passionné du monde numérique et des nouvelles technologies.
+                            <br>Je m’informe régulièrement sur les nouvelles innovations technologiques, les langages de
+                            programmation ou bien les intelligences artificielles..
+                        </p>
+                        <button><a href="index.html">Accéder à mon CV</a></button>
+                    </div>
+                </div>
+    
+                <div class="box formation">
+                    <div class="contentBx">
+                        <h2>Formation & Expérience</h2>
+                        <p>J’ai obtenu mon Baccalauréat Technologique en Sciences de l’industrie et du développement durable avec l’option Système d’Information et Numérique.
+                            <br>Je suis actuellement en première année de BTS Système Numérique avec option Informatique et Réseau.
+                            Dans le cadre de ce BTS j'ai réalisé un stage de 6 semaines dans l'entreprise XANKOM.
+                        </p>
+                        <button><a href="formation.html">En savoir plus</a></button>
+                    </div>
+                </div>
+    
+                <div class="box loisirs">
+                    <div class="contentBx">
+                        <h2>Loisirs</h2>
+                        <p>Depuis mes années de collège, je découvre le monde du numérique, jusqu'à développer mes premiers programmes informatiques. Au lycée, j'ai retrouvé
+                            une de mes anciennes passions étant plus jeune: la guitare. Depuis, je m'entraine à jouer en autodidacte et j'ai bien l'intention de découvrir d'autres instruments.
+                        </p>
+                        <button><a href="loisirs.html">En savoir plus</a></button>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-credits">
+            <a href="https://www.lacroixrouge-brest.fr/" target="_blank"><img class="footer-logo" src="assets/icons/croixrougecolor.png"></a>
+            <p><strong>Conçu et Développé par Alexis Joncour <br>2023</strong></p>
+            <a href="https://isen-brest.fr/" target="_blank"><img class="footer-logo" src="assets/icons/isen.png"></a>
+            
+            
+        </div>
+    </div>
+
+</body>
+
+</html>
