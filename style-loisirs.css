@@ -174,7 +174,6 @@ section.sect-loisirs{
     background-color: #2c2c2c;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    height: 3vw;
     padding: 5px;
 }
 
@@ -186,7 +185,6 @@ section.sect-loisirs{
     grid-template-rows: 1fr;
     grid-column-gap: 40px;
     grid-row-gap: 0px;
-    height: 70vh;
     }
 
 .container1 p{
@@ -197,7 +195,7 @@ section.sect-loisirs{
 }
 
 .container1 img{
-    width: 10%;
+    width: 15%;
 }
 
 .container1-subtitles-prog{
@@ -284,7 +282,6 @@ section.sect-loisirs{
     background-color: #2c2c2c;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    height: 3vw;
     padding: 5px;
 }
 
@@ -297,10 +294,9 @@ section.sect-loisirs{
     grid-template-rows: 1fr;
     grid-column-gap: 40px;
     grid-row-gap: 0px;
-    height: 70vh;
     }
 
-.container2 img{
+.container2 .flag{
     width: 15%;
 }
 
@@ -354,12 +350,28 @@ section.sect-loisirs{
         transition: 0.2s;
     }
 
+    .photo-italie{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .photo-italie img{
+        width: 50%;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+    .photo-italie p {
+        font-size: 17px;
+        text-align:  center;
+    }
+
     .italie:hover{
         transform: scale(1.04);
         transition: 0.2s;
     }
 
-    .italie:hover img{
+    .italie:hover .flag{
         animation: ring 1.5s ease;
     }
 
@@ -377,7 +389,7 @@ section.sect-loisirs{
         transition: 0.2s;
     }
 
-    .vietnam:hover img{
+    .vietnam:hover .flag{
         animation: ring 1.5s ease;
     }
 
