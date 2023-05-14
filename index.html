@@ -13,37 +13,33 @@
 
 <body>
 
-    
-    <div class="nav-container">
+    <div class="nav-container" id="nav-container">
         <!-- Menu Dynamique -->
-        <div class="nav-burger-items" id="burger-item">
-            <ul>
-                <li class="nav-button">
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li class="nav-button">
-                    <a href="presentation.html">Qui Suis-je</a>
-                </li>
-                <li class="nav-button">
-                    <a href="formation.html">Formations</a>
-                </li>
-                <li class="nav-button">
-                    <a href="projets.html">Projets</a>
-                </li>
-                <li class="nav-button">
-                    <a href="loisirs.html">Loisirs</a>
-                </li>
-                <li class="nav-button">
-                    <a href="contacts.html">Contacts</a>
-                </li>
-            </ul>
-        </div>
-
         <div class="nav-burger">
 
             <label class="burger" for="burger-button"><img src="assets/icons/menu.png" class="img-burger"></label>
             <button id="burger-button" onclick="burgerclic()"></button>
 
+        </div>
+        
+        <div class="nav-burger-items" id="nav-burger-items">
+            <ul>
+                <li class="nav-button-burger-active">
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="formation.html">Formation</a>
+                </li>
+                <li>
+                    <a href="projets.html">Projets</a>
+                </li>
+                <li>
+                    <a href="loisirs.html">Loisirs</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
         </div>
 
         <!-- Barre de Navigation -->

@@ -10,10 +10,39 @@
     <title>Section - Formation & Expérience</title>
 </head>
 <body>
-    <!-- Barre de Navigation -->
-    <div class="nav-container">
-        <a href="index.html"><img class="nav-logo" src="assets/icons/logo.png"></a>
 
+    <div class="nav-container" id="nav-container">
+        <!-- Menu Dynamique -->
+        <div class="nav-burger">
+    
+            <label class="burger" for="burger-button"><img src="assets/icons/menu.png" class="img-burger"></label>
+            <button id="burger-button" onclick="burgerclic()"></button>
+    
+        </div>
+    
+        <div class="nav-burger-items" id="nav-burger-items">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li class="nav-button-burger-active">
+                    <a href="formation.html">Formation</a>
+                </li>
+                <li>
+                    <a href="projets.html">Projets</a>
+                </li>
+                <li>
+                    <a href="loisirs.html">Loisirs</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    
+        <!-- Barre de Navigation -->
+        <a href="index.html"><img class="nav-logo" src="assets/icons/logo.png"></a>
+    
         <nav class="nav-items">
             <ul>
                 <li class="nav-button"><a href="index.html">Accueil</a></li>
@@ -24,118 +53,117 @@
             </ul>
         </nav>
     </div>
-
-    <section class="container4" id="wrapper">
-        <div class="timeline-container">
+    <section class="sect-formation">
+        <div class="container4" id="wrapper">
+            <div class="timeline-container">
     
-            <div id="timeline">
-                
-                <div class="timeline-card">
-                    <span>2020-2021</span>
-                    <h2>Première STI2D</h2>
-                </div>
-
-                <div class="timeline-card">
-                    <h2>Terminale STI2D Option SIN</h2>
-                    <span>2021-2022</span>
-                    <div class="card-info">
-                        <p><strong>Voir:</strong> <a class="button" href="#formation">Ma Formation</a></p>
-                        <p><br><strong>Voir:</strong> <a class="button" href="#projets">Projets en STI2D</a></p>
+                <div id="timeline">
+    
+                    <div class="timeline-card">
+                        <span>2020-2021</span>
+                        <h2>Première STI2D</h2>
+                    </div>
+    
+                    <div class="timeline-card">
+                        <h2>Terminale STI2D Option SIN</h2>
+                        <span>2021-2022</span>
+                        <div class="card-info">
+                            <p><strong>Voir:</strong> <a class="button" href="#formation">Ma Formation</a></p>
+                            <p><br><strong>Voir:</strong> <a class="button" href="#projets">Projets en STI2D</a></p>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-card">
+                        <h2>BTS Système Numérique IR Année 1</h2>
+                        <span>2022-2023</span>
+                        <div class="card-info">
+                            <p><strong>Voir:</strong> <a class="button" href="#formation">Ma Formation</a>
+                            <p><br><strong>Voir:</strong> <a class="button" href="#experiences">Expérience
+                                    Professionelle</a></p>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-card">
+                        <h2>BTS Système Numérique IR Année 2</h2>
+                        <span>2023-2024</span>
+                        <div class="card-info">
+                            <p><strong>Voir:</strong> Ma Formation</p>
+                            <p><br><strong>Voir:</strong> Voyage Humanitaire au Vietnam <i>(En attente de 2024)</i></p>
+                        </div>
+                    </div>
+    
+                    <div class="timeline-card">
+                        <h2>CIPA 3 ISEN</h2>
+                        <span>Projection 2024-2025</span>
                     </div>
                 </div>
-
-                <div class="timeline-card">
-                    <h2>BTS Système Numérique IR Année 1</h2>
-                    <span>2022-2023</span>
-                    <div class="card-info">
-                        <p><strong>Voir:</strong> <a class="button" href="#formation">Ma Formation</a>
-                        <p><br><strong>Voir:</strong> <a class="button" href="#experiences">Expérience Professionelle</a></p>
-                    </div>
+    
+            </div>
+        </div>
+    
+        <div class="container1" id="formation">
+    
+            <div class="container1-div1">
+                <img class="container1-img" draggable="false" src="assets/wallpapers/img-formation.jpg">
+            </div>
+    
+            <div class="container1-div2">
+                <div class="container1-div2-title">
+                    <img class="icon-formation" src="assets/icons/formation.png">
+                    <h1>Ma Formation</h1>
                 </div>
-
-                <div class="timeline-card">
-                    <h2>BTS Système Numérique IR Année 2</h2>
-                    <span>2023-2024</span>
-                    <div class="card-info">
-                        <p><strong>Voir:</strong> Ma Formation</p>
-                        <p><br><strong>Voir:</strong> Voyage Humanitaire au Vietnam <i>(En attente de 2024)</i></p>
-                    </div>
-                </div>
-
-                <div class="timeline-card">
-                    <h2>CIPA 3 ISEN</h2>
-                    <span>Projection 2024-2025</span>
+    
+                <div class="container1-div2-text">
+                    <h2><strong>2022-2023 | BTS SN Option IR & PREPA ISEN<br>──────────────────────</strong></h2>
+                    <p> Je suis actuellement en première année de BTS Système Numérique option Informatique et Réseau afin
+                        de
+                        suivre deux de
+                        mes grands intérêts : la programmation et la domotique.
+                        Je fais parallèlement une option préparatoire à l’école d’ingénieurs ISEN à Brest, me permettant
+                        d’intégrer cette même école à l’issue de mon BTS, en apprentissage.</p>
+                    <h2><strong>2021-2022 | Baccalauréat STI2D Option SIN<br>──────────────────────</strong></h2>
+                    <p> J’ai obtenu mon Baccalauréat Technologique en Sciences de l’industrie et du développement durable
+                        avec
+                        l’option Système d’Information et Numérique au lycée La Croix Rouge La Salle.
+                        Mon intérêt pour le monde numérique, déjà grandissant à l'époque, m’a conduit à suivre une voie
+                        technologique.</p>
                 </div>
             </div>
-
+        </div>
+    
+        <div class="container2" id="experiences">
+            <div class="container2-div1">
+                <div class="container2-div1-title">
+                    <img class="icon-experience" src="assets/icons/businessman.png">
+                    <h1>Mes Expériences</h1>
+                </div>
+    
+                <div class="container2-div1-text">
+                    <h2><strong>Domaine Lycéen → Projets en STI2D<br>──────────────────────</strong></h2>
+                    <p>Ma formation en STI2D m’a permis au fil des deux ans, de participer à des projets et concevoir des
+                        programmes dans le but de rendre fonctionnel des maquettes de robots ou encore de bateaux.
+                        <br>Pour ces projets nous étions amenés à suivre le plus possible des protocoles profesionnels, a
+                        savoir la préparation en amont du projet : diagramme de Gantt, Cahiers des Charge, Répartition des
+                        tâches ou encore planification.
+                        <br>Une des épreuves de mon baccalauréat consistait justement à évaluer l’aptitude à travailler en
+                        équipe, la capacité à fournir un résultat fonctionnel conforme à des contraintes, ainsi que rendre
+                        compte du projet à un jury.
+                    </p>
+    
+                    <h2><strong>Domaine Professionnel → Stage<br>──────────────────────</strong></h2>
+                    <p>Dans le cadre de mon BTS je suis amené à faire un stage de 6 semaines dans l’entreprise XANKOM, un
+                        fournisseur
+                        d’accès internet pour les entreprises et particuliers.</p>
+                </div>
+            </div>
+    
+            <div class="container2-div2">
+                <img class="container2-img" draggable="false" src="assets/wallpapers/img-experiences.jpg">
+            </div>
         </div>
     </section>
 
-    <div class="container1" id="formation">
     
-        <div class="container1-div1">
-            <img class="container1-img" draggable="false" src="assets/wallpapers/img-formation.jpg">
-        </div>
-    
-        <div class="container1-div2">
-            <div class="container1-div2-title">
-                <img class="icon-formation" src="assets/icons/formation.png">
-                <h1>Ma Formation</h1>
-            </div>
-
-            <div class="container1-div2-text">
-                <h2><strong>2022-2023 | BTS SN Option IR & PREPA ISEN<br>──────────────────────</strong></h2>
-                <p> Je suis actuellement en première année de BTS Système Numérique option Informatique et Réseau afin de
-                    suivre deux de
-                    mes grands intérêts : la programmation et la domotique.
-                    Je fais parallèlement une option préparatoire à l’école d’ingénieurs ISEN à Brest, me permettant
-                    d’intégrer cette même école à l’issue de mon BTS, en apprentissage.</p>
-                <h2><strong>2021-2022 | Baccalauréat STI2D Option SIN<br>──────────────────────</strong></h2>
-                <p> J’ai obtenu mon Baccalauréat Technologique en Sciences de l’industrie et du développement durable
-                    avec
-                    l’option Système d’Information et Numérique au lycée La Croix Rouge La Salle.
-                    Mon intérêt pour le monde numérique, déjà grandissant à l'époque, m’a conduit à suivre une voie
-                    technologique.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="container2" id="experiences">
-        <div class="container2-div1">
-            <div class="container2-div1-title">
-                <img class="icon-experience" src="assets/icons/businessman.png">
-                <h1>Mes Expériences</h1>
-            </div>
-
-            <div class="container2-div1-text">
-                <h2><strong>Domaine Lycéen → Projets en STI2D<br>──────────────────────</strong></h2>
-                <p>Ma formation en STI2D m’a permis au fil des deux ans, de participer à des projets et concevoir des
-                    programmes dans le but de rendre fonctionnel des maquettes de robots ou encore de bateaux.
-                    <br>Pour ces projets nous étions amenés à suivre le plus possible des protocoles profesionnels, a
-                    savoir la préparation en amont du projet : diagramme de Gantt, Cahiers des Charge, Répartition des
-                    tâches ou encore planification.
-                    <br>Une des épreuves de mon baccalauréat consistait justement à évaluer l’aptitude à travailler en
-                    équipe, la capacité à fournir un résultat fonctionnel conforme à des contraintes, ainsi que rendre
-                    compte du projet à un jury.
-                </p>
-    
-                <h2><strong>Domaine Professionnel → Stage<br>──────────────────────</strong></h2>
-                <p>Dans le cadre de mon BTS je suis amené à faire un stage de 6 semaines dans l’entreprise XANKOM, un
-                    fournisseur
-                    d’accès internet pour les entreprises et particuliers.</p>
-            </div>
-        </div>
-    
-        <div class="container2-div2">
-            <img class="container2-img" draggable="false" src="assets/wallpapers/img-experiences.jpg">
-        </div>
-    </div>
-
-    <div class="container3" id="projets">
-        
-
-
-    </div>
 
     <div class="footer">
         <div class="footer-credits">

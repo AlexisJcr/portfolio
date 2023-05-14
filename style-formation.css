@@ -95,6 +95,66 @@ nav ul{
     text-decoration: none;
     letter-spacing: 1px;
 }
+/*==== MENU DYNAMIQUE ====*/
+.nav-burger-items{
+    display: none;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+.nav-burger-items ul{
+    list-style: none;
+    gap: 90px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-burger-items a{
+    font-weight: bold;
+    font-size: 30px;
+    color:#070606;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav-button-burger-active a{
+    color: #00498D;
+}
+
+.burger-btn:hover { 
+    transition: all 0.2s ease-in-out;
+    opacity: 0.7;
+}
+
+.nav-burger{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+#burger-button {display:none;}
+
+.img-burger{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    overflow: visible;
+    width: 60px;
+    padding: 5px;
+}
+
+.img-burger:hover{
+    transition: all 0.15s ease-in-out;
+    opacity: 0.5;
+}
+
+/*==== SECTION ====*/
+
+.sect-formation{
+    display: flex;
+    flex-direction: column;
+}
 
 /*==== CONTAINER 1: MA FORMATION ====*/
 
@@ -106,7 +166,6 @@ nav ul{
     grid-row-gap: 0px;
     backdrop-filter: blur(1px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    height: 100vh;
     }
     
     /*Image*/
@@ -173,7 +232,6 @@ nav ul{
     grid-row-gap: 0px;
     backdrop-filter: blur(1px);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    height: 120vh;
     }
     /*Texte*/
     .container2-div1 {
@@ -236,7 +294,6 @@ nav ul{
     margin-top: 80px;
     /*background-color: #00274dea;*/
     background: linear-gradient(to left,#00274dce,#02386ed0,#00498dd0);
-    height: 45vh;
     width: 100%;
     overflow: hidden;
     padding: 0 32px;
@@ -401,6 +458,7 @@ nav ul{
         font-size: 1.2rem;
    }
 }
+
 @keyframes linegrow {
     0% {
         width: 0px;
@@ -464,3 +522,37 @@ nav ul{
 .footer-logo{
     width: 9vw;
 }
+
+
+/*Gestion Menu de Navigation Dynamique*/
+@media screen and (max-width: 1021px) {
+    .nav-items{
+        display: none;
+    }
+    .nav-burger-items{
+        display: none;
+    }
+    .img-burger {
+        display: flex;
+        justify-content: start;
+    }
+    
+}
+
+@media screen and (min-width: 1022px) {
+    .nav-items{
+        display: flex;
+    }
+
+    .nav-burger{
+        display: none;
+    }
+    .nav-burger-items{
+        display: none;
+    }
+    .img-burger {
+        display: none;
+    }
+}
+
+

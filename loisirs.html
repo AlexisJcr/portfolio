@@ -10,8 +10,38 @@
     <title>Section - Loisirs</title>
 </head>
 <body>
-    <!-- Barre de Navigation -->
-    <div class="nav-container">
+
+
+    <div class="nav-container" id="nav-container">
+        <!-- Menu Dynamique -->
+        <div class="nav-burger">
+    
+            <label class="burger" for="burger-button"><img src="assets/icons/menu.png" class="img-burger"></label>
+            <button id="burger-button" onclick="burgerclic()"></button>
+    
+        </div>
+    
+        <div class="nav-burger-items" id="nav-burger-items">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="formation.html">Formation</a>
+                </li>
+                <li>
+                    <a href="projets.html">Projets</a>
+                </li>
+                <li class="nav-button-burger-active">
+                    <a href="loisirs.html">Loisirs</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Barre de Navigation -->
         <a href="index.html"><img class="nav-logo" src="assets/icons/logo.png"></a>
 
         <nav class="nav-items">
@@ -92,8 +122,6 @@
             <a href="https://www.lacroixrouge-brest.fr/" target="_blank"><img class="footer-logo" src="assets/icons/croixrougecolor.png"></a>
             <p><strong>Conçu et Développé par Alexis Joncour <br>2023</strong></p>
             <a href="https://isen-brest.fr/" target="_blank"><img class="footer-logo" src="assets/icons/isen.png"></a>
-            
-            
         </div>
     </div>
     

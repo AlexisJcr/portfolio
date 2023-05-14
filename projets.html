@@ -12,8 +12,37 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
 </head>
 <body>
-    <!-- Barre de Navigation -->
-    <div class="nav-container">
+
+    <div class="nav-container" id="nav-container">
+        <!-- Menu Dynamique -->
+        <div class="nav-burger">
+    
+            <label class="burger" for="burger-button"><img src="assets/icons/menu.png" class="img-burger"></label>
+            <button id="burger-button" onclick="burgerclic()"></button>
+    
+        </div>
+    
+        <div class="nav-burger-items" id="nav-burger-items">
+            <ul>
+                <li>
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="formation.html">Formation</a>
+                </li>
+                <li class="nav-button-burger-active">
+                    <a href="projets.html">Projets</a>
+                </li>
+                <li>
+                    <a href="loisirs.html">Loisirs</a>
+                </li>
+                <li>
+                    <a href="contacts.html">Contacts</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Barre de Navigation -->
         <a href="index.html"><img class="nav-logo" src="assets/icons/logo.png"></a>
 
         <nav class="nav-items">
@@ -39,7 +68,7 @@
                     ce qui nous a permis de l'étudier en détail, son installation, ses possibilités et son fonctionnement. Il s'agit là d'un site Web statique ayant quelques
                     fonctionnalités comme une traduction en anglaise de l'ensemble de ses pages, ou encore plus complexe, un carrousel dynamique d'images.
                 </p>
-                <button class="custom-btn btn"><a href="https://alexisjcr.github.io/projectsiteniryo/" target="_blank"><span>Aperçu du Site Réalisé</span></a></button>
+                <button class="custom-btn btn"><a href="https://alexisjcr.github.io/projectsiteniryo.github.io/" target="_blank"><span>Aperçu du Site Réalisé</span></a></button>
             </div>
             <div class="container1-img">
                 <img draggable="false" src="assets/photos/niryoned2.jpg">
@@ -93,9 +122,9 @@
 
     <div class="footer">
         <div class="footer-credits">
-            <a href="https://www.lacroixrouge-brest.fr/" target="_blank"><img draggable="false"class="footer-logo-lcr" src="assets/icons/croixrougecolor.png"></a>
+            <a href="https://www.lacroixrouge-brest.fr/" target="_blank"><img class="footer-logo" src="assets/icons/croixrougecolor.png"></a>
             <p><strong>Conçu et Développé par Alexis Joncour <br>2023</strong></p>
-            <a href="https://isen-brest.fr/" target="_blank"><img class="footer-logo-isen" draggable="false" src="assets/icons/isen.png"></a>
+            <a href="https://isen-brest.fr/" target="_blank"><img class="footer-logo" src="assets/icons/isen.png"></a>
         </div>
     </div>
 
