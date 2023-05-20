@@ -149,35 +149,50 @@ nav ul{
 }
 
 
+
+.loisirs-title{
+    margin-top: 80px;
+    background-image: url(assets/wallpapers/cinque_terre.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -450px;
+    background-size: 100vw;
+    background-attachment: fixed;
+    transition: 0.2s;
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 100px solid rgb(232, 232, 232);
+}
+
+.title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border: 8px solid rgb(232, 232, 232);
+    background-color: #0706063d;
+    backdrop-filter: blur(1.5px);
+    width: 50%;
+    height: 10vw;
+    user-select: none;
+}
+
+.loisirs-title h1{
+    font-size: 3vw;;
+    color: rgb(232, 232, 232);
+}
+
 /* === SECTION LOISIRS === */
 
 section.sect-loisirs{
-    margin-top: 80px;
     padding: 50px;
     backdrop-filter: blur(1px);
-    
+
 }
 
-/* DIV LOISIRS */
-
-.loisirs{
-    background-color: rgb(232, 232, 232);
-    padding: 40px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
-
-.loisirs-title{
-    text-align: center;
-    font-size: 2vw;
-    color: rgb(232, 232, 232);
-    margin-bottom: 40px;
-    background-color: #2c2c2c;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    padding: 5px;
-}
-
-/* CONTAINER 1 */
+/* CONTAINER 1*/
 
 .container1 {
     display: grid;
@@ -231,7 +246,7 @@ section.sect-loisirs{
         background-color: #00264D;
         color: rgb(232, 232, 232);
         padding: 30px;
-        border-radius: 10px;
+        border-radius: 3px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         transition: 0.2s;
     }
@@ -252,7 +267,7 @@ section.sect-loisirs{
         background-color: #00264D;
         color: rgb(232, 232, 232);
         padding: 30px;
-        border-radius: 10px;
+        border-radius: 3px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         transition: 0.2s;
     }
@@ -274,44 +289,34 @@ section.sect-loisirs{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.voyages-title{
-    text-align: center;
-    font-size: 2vw;
-    color: rgb(232, 232, 232);
-    margin-bottom: 40px;
-    background-color: #2c2c2c;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    padding: 5px;
-}
 
 /* CONTAINER 2*/
 
 .container2 {
-    margin-top: 40px;
-    display: grid;
+    margin-top: 50px;
+    display: flex;
+    /*display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 40px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px;*/
     }
 
 .container2 .flag{
-    width: 15%;
+    width: 8%;
 }
 
 .container2-subtitles-italie{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
 }
 
 .container2-subtitles-italie h1{
-    margin-right: 25%;
+    margin-right: 38.5%;
 }
 
-.container2-subtitles-vietnam{
+/*.container2-subtitles-vietnam{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -320,7 +325,7 @@ section.sect-loisirs{
 
 .container2-subtitles-vietnam h1{
     margin-left: 41%;
-}
+}*/
 
 .container2 span{
     font-size: 1.2vw;
@@ -330,7 +335,6 @@ section.sect-loisirs{
     .container2 h1{
         text-align: center;
         font-size: 1.6vw;
-        margin-bottom: 20px;
         color: #00264D;
     }
 
@@ -342,22 +346,24 @@ section.sect-loisirs{
     }
     
     .italie {
-        grid-area: 1 / 1 / 2 / 2;
+        /*grid-area: 1 / 1 / 2 / 2;*/
         background-color: rgb(232, 232, 232);
-        border-radius: 10px;
+        border-radius: 3px;
         padding: 30px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         transition: 0.2s;
     }
 
     .photo-italie{
-        margin-top: 20px;
+        display:flex;
         text-align: center;
+        justify-content: space-evenly;
+        gap:30px;
     }
 
     .photo-italie img{
-        width: 50%;
-        border-radius: 15px;
+        width: 25%;
+        border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     }
 
@@ -366,16 +372,27 @@ section.sect-loisirs{
         text-align:  center;
     }
 
-    .italie:hover{
-        transform: scale(1.04);
-        transition: 0.2s;
+    .italie-text{
+        padding: 50px;
+    }
+
+    .italie a{
+        text-decoration: none;
+        color: #00264D;
     }
 
     .italie:hover .flag{
         animation: ring 1.5s ease;
     }
 
-    .vietnam {
+    .italie:hover{
+        transform: scale(1.04);
+        transition: 0.2s;
+    }
+
+
+
+    /*.vietnam {
         grid-area: 1 / 2 / 2 / 3;
         background-color: rgb(232, 232, 232);
         border-radius: 10px;
@@ -391,7 +408,8 @@ section.sect-loisirs{
 
     .vietnam:hover .flag{
         animation: ring 1.5s ease;
-    }
+    }*/
+
 
 
 /* Animation des Logos */
@@ -405,6 +423,10 @@ section.sect-loisirs{
     75% {transform: rotate(5deg);}
     100% {transform: rotate(0deg);}
 }
+
+
+
+
 
 
 /*==== FOOTER ====*/

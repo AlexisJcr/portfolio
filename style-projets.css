@@ -24,7 +24,6 @@
     scroll-behavior: smooth;
 }
 
-
 html {
     overflow-x: hidden;
     background-image: url(assets/wallpapers/background.png);
@@ -152,9 +151,44 @@ nav ul{
 
 
 
+.projets-title{
+    margin-top: 80px;
+    background-image: url(assets/wallpapers/robotique.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -430px;
+    background-size: 100vw;
+    background-attachment: fixed;
+    transition: 0.2s;
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 100px solid rgb(232, 232, 232);
+}
+
+.title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border: 8px solid rgb(232, 232, 232);
+    background-color: #0706063d;
+    backdrop-filter: blur(1.5px);
+    width: 50%;
+    height: 10vw;
+    user-select: none;
+}
+
+.projets-title h1{
+    font-size: 3vw;;
+    color: rgb(232, 232, 232);
+}
+
+
+
 
 section.projets{
-    margin-top: 80px;
     padding: 80px;
     backdrop-filter: blur(1px);
 }
