@@ -48,6 +48,10 @@ body{
     background-color: rgb(232, 232, 232);
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     transition: height 0.3s ease;
+    backdrop-filter: blur(2px);
+    margin-bottom: 40px;
+    position: fixed;
+    z-index: 1;
 }
 
 /*Div Logo*/
@@ -72,6 +76,7 @@ nav ul{
 }
 
 .nav-button a{
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 19px;
     color: #070606;
@@ -85,13 +90,13 @@ nav ul{
 }
 
 .nav-button-active a{
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
     color: #00498D;
     text-decoration: none;
     letter-spacing: 1px;
 }
-
 /*==== MENU DYNAMIQUE ====*/
 .nav-burger-items{
     display: none;
@@ -144,6 +149,87 @@ nav ul{
 .img-burger:hover{
     transition: all 0.15s ease-in-out;
     opacity: 0.5;
+}
+
+
+/* TITLE */
+.contact-title{
+    margin-top: 80px;
+    background-image: url(assets/wallpapers/contact.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position-y: -420px;
+    background-size: 100vw;
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 100px solid rgb(232, 232, 232);
+    text-transform: uppercase;
+}
+
+.title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border: 8px solid rgb(232, 232, 232);
+    background-color: #0706063d;
+    backdrop-filter: blur(1.5px);
+    width: 50%;
+    height: 10vw;
+    user-select: none;
+}
+
+.contact-title h1{
+    font-size: 3vw;
+    color: rgb(232, 232, 232);
+}
+
+
+/* SECTION */
+
+section.contacts{
+    background-image: url(assets/wallpapers/pont-plougastel.jpg);
+    background-size: 100vw;
+    background-position-y: 150px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 40px;
+    text-align: center;
+    align-items:center;
+    justify-content: center;
+}
+
+.email{
+    background-color: rgba(232, 232, 232, 0.247);
+    border-radius: 20px;
+
+}
+
+.email h1{
+    font-size: 3vw;
+}
+
+.email h2{
+    font-size: 2vw;
+}
+
+.email h3{
+    margin-top: 10px;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+}
+
+
+.email p{
+    color: #00264D;
+    font-size: 1.3vw;
+}
+
+.email img{
+    width: 7%;
 }
 
 

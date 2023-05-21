@@ -75,6 +75,7 @@ nav ul{
 }
 
 .nav-button a{
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 19px;
     color: #070606;
@@ -88,6 +89,7 @@ nav ul{
 }
 
 .nav-button-active a{
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
     color: #00498D;
@@ -158,19 +160,18 @@ nav ul{
     background-position-y: -430px;
     background-size: 100vw;
     background-attachment: fixed;
-    transition: 0.2s;
     padding: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 100px solid rgb(232, 232, 232);
+    text-transform: uppercase;
 }
 
 .title-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 30px;
     border: 8px solid rgb(232, 232, 232);
     background-color: #0706063d;
@@ -234,8 +235,8 @@ section.projets a {
     .container1 p{
         text-align: justify;
         font-size: 1.1vw;
-        letter-spacing: 1.5px;
-        line-height: 27px;
+        letter-spacing: 0.1vw;
+        line-height: 1.8vw;
     }
 
     .container1-img {
@@ -302,8 +303,8 @@ section.projets a {
     .container2 p{
         text-align: justify;
         font-size: 1.1vw;
-        letter-spacing: 1.5px;
-        line-height: 27px;
+        letter-spacing: 0.1vw;
+        line-height: 1.8vw;
     }
 
 .icon-lcr{
@@ -317,7 +318,7 @@ section.projets a {
 
 .container3 {
     display: grid;
-    grid-template-columns: 1.4fr 1fr;
+    grid-template-columns: 1.12fr 1fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -351,8 +352,8 @@ section.projets a {
     .container3 p{
         text-align: justify;
         font-size: 1.1vw;
-        letter-spacing: 1.5px;
-        line-height: 27px;
+        letter-spacing: 0.1vw;
+        line-height: 1.8vw;
     }
 
     .container3-img {

@@ -74,6 +74,7 @@ nav ul{
 }
 
 .nav-button a{
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 19px;
     color: #070606;
@@ -87,6 +88,7 @@ nav ul{
 }
 
 .nav-button-active a{
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
     color: #00498D;
@@ -149,27 +151,25 @@ nav ul{
 }
 
 
-
 .loisirs-title{
     margin-top: 80px;
-    background-image: url(assets/wallpapers/cinque_terre.jpg);
+    background-image: url(assets/wallpapers/guitare.jpg);
     background-repeat: no-repeat;
     background-position-y: -450px;
     background-size: 100vw;
     background-attachment: fixed;
-    transition: 0.2s;
     padding: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 100px solid rgb(232, 232, 232);
+    text-transform: uppercase;
 }
 
 .title-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 30px;
     border: 8px solid rgb(232, 232, 232);
     background-color: #0706063d;
@@ -186,8 +186,8 @@ nav ul{
 
 /* === SECTION LOISIRS === */
 
-section.sect-loisirs{
-    padding: 50px;
+section{
+    padding: 3.5vw;
     backdrop-filter: blur(1px);
 
 }
@@ -204,9 +204,9 @@ section.sect-loisirs{
 
 .container1 p{
     text-align: justify;
-    font-size: 1vw;
-    letter-spacing: 1.5px;
-    line-height: 27px;
+    font-size: 1.1vw;
+    letter-spacing: 0.1vw;
+    line-height: 1.8vw;
 }
 
 .container1 img{
@@ -245,10 +245,11 @@ section.sect-loisirs{
         grid-area: 1 / 1 / 2 / 2;
         background-color: #00264D;
         color: rgb(232, 232, 232);
-        padding: 30px;
+        padding: 2.5vw;
         border-radius: 3px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         transition: 0.2s;
+        
     }
 
     .programmation:hover{
@@ -266,7 +267,7 @@ section.sect-loisirs{
         grid-area: 1 / 2 / 2 / 3;
         background-color: #00264D;
         color: rgb(232, 232, 232);
-        padding: 30px;
+        padding: 2.5vw;
         border-radius: 3px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         transition: 0.2s;
@@ -281,32 +282,65 @@ section.sect-loisirs{
         animation: ring 1.5s ease;
     }
 
-/* DIV VOYAGES */
-.voyages{
-    margin-top: 50px;
-    background-color: #00264D;
-    padding: 40px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+/* VOYAGES TITLE */
+
+.voyages-title{
+    z-index: 1;
+    background-image: url(assets/wallpapers/cinque_terre.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -250px;
+    background-size: 100vw;
+    background-attachment: fixed;
+    padding: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 100px solid rgb(232, 232, 232);
+    border-bottom: 100px solid rgb(232, 232, 232);
+    text-transform: uppercase;
 }
 
+.title-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border: 8px solid rgb(232, 232, 232);
+    background-color: #0706063d;
+    backdrop-filter: blur(1.5px);
+    width: 50%;
+    height: 10vw;
+    user-select: none;
+}
+
+.voyages-title h1{
+    font-size: 3vw;;
+    color: rgb(232, 232, 232);
+}
 
 /* CONTAINER 2*/
 
 .container2 {
-    margin-top: 50px;
     display: flex;
-    /*display: grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 40px;
-    grid-row-gap: 0px;*/
+    grid-row-gap: 0px;
     }
 
-.container2 .flag{
-    width: 8%;
+.container2-subtitles-italie{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.container2-subtitles-italie{
+.container2-subtitles-italie h1{
+    margin-right: 25%;
+}
+
+
+/*.container2-subtitles-italie{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -340,57 +374,72 @@ section.sect-loisirs{
 
     .container2 p{
         text-align: justify;
-        font-size: 1vw;
-        letter-spacing: 1.5px;
-        line-height: 27px;
+        font-size: 1.1vw;
+        letter-spacing: 0.1vw;
+        line-height: 1.8vw;
     }
     
-    .italie {
-        /*grid-area: 1 / 1 / 2 / 2;*/
+    .italie-div1 {
+        grid-area: 1 / 1 / 2 / 2;
         background-color: rgb(232, 232, 232);
         border-radius: 3px;
-        padding: 30px;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
         transition: 0.2s;
+        padding: 20px;
     }
 
-    .photo-italie{
-        display:flex;
-        text-align: center;
-        justify-content: space-evenly;
-        gap:30px;
-    }
-
-    .photo-italie img{
-        width: 25%;
-        border-radius: 5px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-    }
-
-    .photo-italie p {
-        font-size: 17px;
-        text-align:  center;
+    .italie-div1 img{
+        width: 15%;
     }
 
     .italie-text{
-        padding: 50px;
+        padding: 2.5vw;
     }
 
-    .italie a{
+    .italie-div1 a{
         text-decoration: none;
         color: #00264D;
     }
 
-    .italie:hover .flag{
+    .italie-div1:hover .flag{
         animation: ring 1.5s ease;
     }
 
-    .italie:hover{
+    .italie-div1:hover{
         transform: scale(1.04);
         transition: 0.2s;
     }
 
 
+    /* div2 */
+    .italie-div2{
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: #00264D;
+        border-radius: 3px;
+        padding: 2vw;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        transition: 0.2s;
+    }
+
+
+    .italie-photos{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .italie-div2 img{
+        width: 50%;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 20px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    }
+
+    .italie-div2:hover{
+        transform: scale(1.04);
+        transition: 0.2s;
+    }
+
+    
 
     /*.vietnam {
         grid-area: 1 / 2 / 2 / 3;

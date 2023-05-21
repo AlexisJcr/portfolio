@@ -76,6 +76,7 @@ nav ul{
 }
 
 .nav-button a{
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 19px;
     color: #070606;
@@ -89,6 +90,7 @@ nav ul{
 }
 
 .nav-button-active a{
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
     color: #00498D;
@@ -157,19 +159,18 @@ nav ul{
     background-repeat: no-repeat;
     background-position-y: -180px;
     background-size: 100vw;
-    transition: 0.2s;
     padding: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 100px solid rgb(232, 232, 232);
+    text-transform: uppercase;
 }
 
 .title-box{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     padding: 30px;
     border: 8px solid rgb(232, 232, 232);
     background-color: #0706063d;
@@ -317,6 +318,11 @@ nav ul{
             line-height: 1.8vw;
         }
 
+        .logo-xankom{
+            display: flex;
+            width: 25%;
+        }
+
     /*Image*/
     .container2-div2 {
         grid-area: 1 / 2 / 2 / 3;
@@ -330,9 +336,10 @@ nav ul{
 /*==== CONTAINER 4: TIMELINE====*/
 .container4{
     margin-top: 80px;
+    margin-left: 3%;
     /*background-color: #00274dea;*/
     background: linear-gradient(to left,#00274dce,#02386ed0,#00498dd0);
-    width: 100%;
+    width: 90%;
     overflow: hidden;
     padding: 0 32px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px, rgba(0, 0, 0, 0.22) 0px 5px 5px;
@@ -389,14 +396,14 @@ nav ul{
 #timeline:after {
     content: "";
     position: absolute;
-    height: 1px;
+    height: 1.5px;
     background: #fff;
     top: 50%;
     transition: 3s linear;
     animation-name: linegrow;
-    animation-duration: 7s;
+    animation-duration: 5s;
     animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    animation-iteration-count: 0.97;
     animation-timing-function: linear;
 }
 
