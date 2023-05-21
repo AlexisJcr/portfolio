@@ -298,6 +298,7 @@ section{
     border-top: 100px solid rgb(232, 232, 232);
     border-bottom: 100px solid rgb(232, 232, 232);
     text-transform: uppercase;
+    transition: 0.2s;
 }
 
 .title-box{
@@ -532,4 +533,20 @@ section{
     .img-burger {
         display: none;
     }
+}
+
+@media screen and (max-width: 1420px) {
+    .loisirs-title{
+        background-position-y: -50px;
+        background-size: 100vw;
+        background-attachment: fixed;
+        transition: 0.5s;
+    }
+
+    .voyages-title{
+        background-position-y: -20px;
+        background-size: 100vw;
+        background-attachment: fixed;
+        transition: 0.2s;
+    } 
 }

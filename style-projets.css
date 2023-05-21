@@ -166,6 +166,7 @@ nav ul{
     align-items: center;
     border-bottom: 100px solid rgb(232, 232, 232);
     text-transform: uppercase;
+    transition: 0.2s;
 }
 
 .title-box{
@@ -506,4 +507,13 @@ section.projets a {
     .img-burger {
         display: none;
     }
+}
+
+@media screen and (max-width: 1420px) {
+    .projets-title{
+        background-position-y: -50px;
+        background-size: 100vw;
+        background-attachment: fixed;
+        transition: 0.2s;
+    } 
 }

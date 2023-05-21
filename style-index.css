@@ -26,7 +26,7 @@
 
 html {
     overflow-x: hidden;
-    background-color: #1d1d1dd3;
+    background-color: #181818;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -158,13 +158,13 @@ nav ul{
     background-position-y: -150px;
     background-size: 100vw;
     background-attachment: fixed;
-    transition: 0.2s;
     padding: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 100px solid rgb(232, 232, 232);
     height: 31vw;
+    transition: 0.2s;
 }
 
 .title-box{
@@ -180,6 +180,7 @@ nav ul{
     width: 70%;
     height: 25vw;
     user-select: none;
+    transition: 0.2s;
 }
 
 .main-title h1{
@@ -548,3 +549,13 @@ nav ul{
         display: none;
     }
 }
+
+@media screen and (max-width: 1400px) {
+    .main-title{
+        background-position-y: -50px;
+        background-size: 100vw;
+        background-attachment: fixed;
+        transition: 0.2s;
+    } 
+}
+
