@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+*, ::before, ::after { 
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.714286;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+
+.header-area{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main{
+    display: flex;
+    align-items: center;
+}
+
+.header-main img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    width: 75px;
+}
+
+.header-items ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.nav-button a{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .15s;
+}
+
+.nav-button a:hover{
+    color: #283caa;
+    filter: brightness(130%);
+}
+
+.nav-button-active a{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #283caa; 
+    text-decoration: none;
+}
+
+.header-right img{
+    width: 50px;
+    transition: all .15s;
+}
+
+.header-right img:hover{
+    transform: translateY(-3px);
+    filter: brightness(130%);
+}
+
+/* ===== LOISIRS ===== */
+.loisirs{
+    padding: 50px;
+    height: 865px;
+    color: #fff;
+    background-color:  #101010;
+}
+
+.loisirs span{
+    color: #283caa;
+}
+
+.loisirs-title{
+    text-align: center;
+}
+
+.loisirs-title h1{
+    font-size: 45px;
+}
+
+.loisirs-supercontainer{
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+}
+
+.container1{
+    padding: 30px;
+    height: 595px;
+    border-radius: 3px;
+    width: 50%;
+    background-image: url(/assets/wallpapers/guitare.jpg);
+    background-size: cover;
+}
+
+.container2{
+    padding: 30px;
+    height: 595px;
+    border-radius: 3px;
+    width: 50%;
+    background-image: url(/assets/wallpapers/laptop.jpg);
+    background-size: cover;
+}
+
+.box{
+    backdrop-filter: brightness(25%);
+    height: 530px;
+    padding: 30px;
+}
+
+.title{
+    align-items: center;
+}
+
+.title h2{
+    text-align: center;
+    color:#fff;
+    font-size: 25px;
+}
+
+.text-container{
+    border-radius: 3px;
+}
+
+.text-container p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==== VOYAGES ==== */
+.voyages{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 50px;
+    height: 865px;
+    color: #fff;
+    background-color: #1d1d1d;
+}
+
+.italie-title{
+    text-align: center;
+}
+.italie-title h1{
+    font-size: 45px;
+}
+
+.italie-supercontainer{
+    display: flex;
+    gap: 50px;
+}
+
+.italie-container1{
+    padding: 30px;
+    width: 50%;
+    background-color: #101010;
+    border-radius: 2px;
+}
+
+.italie-container2{
+    padding: 30px;
+    width: 50%;
+    background-color: #101010;
+    border-radius: 2px;
+}
+
+.italie-container1 h2{
+    text-align: center;
+    color: #283caa;
+    font-size: 25px;
+}
+
+.italie-text{
+    margin-top: 25px;
+}
+
+.italie-text p{
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.italie-images{
+    display: flex;
+    gap: 40px;
+}
+
+.italie-images img{
+    width: 450px;
+    border-radius: 2px;
+}

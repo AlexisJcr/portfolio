@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+*, ::before, ::after { 
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.714286;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+}
+
+.header-area{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-main{
+    display: flex;
+    align-items: center;
+}
+
+.header-main img{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    width: 75px;
+}
+
+.header-items ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.nav-button a{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .15s;
+}
+
+.nav-button a:hover{
+    color: #283caa;
+    filter: brightness(130%);
+}
+
+.nav-button-active a{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #283caa; 
+    text-decoration: none;
+}
+
+.header-right img{
+    width: 50px;
+    transition: all .15s;
+}
+
+.header-right img:hover{
+    transform: translateY(-3px);
+    filter: brightness(130%);
+}
+
+/* ===== PRESENTATION ===== */
+.container1_1{
+    height: 720px;
+    color: #fff;
+}
+
+.text-container{
+    margin-top: 250px;
+    margin-left: 250px;
+    text-align: left;
+    font-family: Montserrat,sans-serif;
+}
+
+.text-container h1{
+    margin-left: -8px;
+    font-size: 7rem;
+}
+
+.text-container h2{
+    font-size: 4rem;
+}
+
+.text-span{
+    color:#283caa;
+}
+
+/* === BUTTON === */
+.buttonabout{
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    height: 4.5rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #101010;
+    
+    border: none;
+    width: 20%;
+    transition: .5s;
+    cursor:pointer;
+}
+
+.buttonabout span{
+    font-size: 1.3vw;
+    color: #fff;
+}
+  
+.buttonabout:hover::before {
+    transform: scaleX(1);
+}
+  
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+  
+.buttonabout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgb(28, 40, 141) 10.8%,
+      #32528F 94.3%
+    );
+    transition: all 0.5s;
+}
+
+.buttonabout:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: .5s;
+}
+
+/* ===== CARDS ABOUT ===== */
+.container1{
+    height: 970px;
+    background-color: #101010;
+    padding: 50px;
+}
+
+.container1 h1{
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 120px;
+    grid-row-gap: 0px;
+    padding: 50px;
+    height: 750px;
+}
+
+.text-box1, .text-box2, .text-box3{
+    border-radius: 3px;
+    backdrop-filter: brightness(50%);
+    color:#fff;
+    height: 100px;
+    transition: all 0.5s;
+}
+
+.card-container h2{
+    margin-top: 550px;
+    font-size: 40px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.card-container p{
+    margin-top: -500px;
+    font-size: 20px;
+    padding: 25px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+/* === CARD 1 === */
+.card1 {
+    grid-area: 1 / 1 / 2 / 2;
+    background-image: url(/assets/wallpapers/Phare_du_Minou.jpg);
+    background-size: cover;
+    background-position: -80px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0px 25px #283caa;
+    transition: 0.5s;
+}
+
+/* === CARD 2 === */
+.card2 {
+    grid-area: 1 / 2 / 2 / 3;
+    background-image: url(/assets/wallpapers/programmation.jpg);
+    background-size: cover;
+    background-position-x: -80px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0px 25px #283caa;
+    transition: 0.5s;
+}
+
+/* === CARD 3 === */
+.card3 {
+    grid-area: 1 / 3 / 2 / 4;
+    background-image: url(/assets/wallpapers/verti-guitar.jpg);
+    background-size: cover;
+    background-position-y: -20px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 0px 25px #283caa;
+    transition: 0.5s;
+}
+
+/*=== HOOVERS COMMUNS === */
+.card1:hover, .card2:hover, .card3:hover{
+    transform:scale(1.1)
+}
+
+.card1:hover h2, .card2:hover h2, .card3:hover h2{
+    margin-top: 0px;
+}
+
+.card1:hover .text-box1, .card2:hover .text-box2, .card3:hover .text-box3{
+    height: 100%;
+}
+
+.card1:hover p, .card2:hover p, .card3:hover p{
+    margin-top: 0px;
+    opacity: 100;
+}
+
+.card2:hover .button-card, .card3:hover .button-card{
+    opacity: 100;
+}
+
+/* ==== BUTTON CARD ==== */
+.button-card {
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #fff;
+    border: 4px solid #283caa;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 85px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #283caa;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button-card:hover::before {
+    scale: 3;
+}
+
+.button-card:hover {
+    color: #fff;
+    scale: 1.1;
+    box-shadow: 0 0px 20px #14216e;
+    border: 0px;
+}
+
+.button-card:active {
+    scale: 1;
+}
+
+/* ===== FOOTER ===== */
+.footer p{
+    font-size: 15px;
+    color: #fff;
+}
+
+.footer-credits{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo{
+    width: 150px;
+}
+
+/* ===== RESPONSIVE ===== */
