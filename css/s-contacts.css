@@ -157,3 +157,23 @@ body {
     background: #09223b;
     color: rgb(255, 255, 255, .7);
 }
+
+/* ===== FOOTER ===== */
+
+.footer p{
+    font-size: 15px;
+    color: #fff;
+}
+
+.footer-credits{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo{
+    width: 150px;
+}

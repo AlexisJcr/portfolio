@@ -164,7 +164,7 @@ body {
 
 .formation h1{
     color: #fff;
-    font-size: 45px;
+    font-size: 42px;
 }
 
 .forma-supercontainer{
@@ -178,7 +178,7 @@ body {
 }
 
 .forma-title h2{
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .forma-title span{
@@ -186,7 +186,7 @@ body {
 }
 
 .formation p{
-    font-size: 20px;
+    font-size: 19px;
     text-align: justify;
     line-height: 35px;
     font-family: 'Poppins', sans-serif;
@@ -204,7 +204,7 @@ body {
     background-color: #1d1d1d;
     width: 100%;
     border-radius: 3px;
-    background-image: url(/assets/wallpapers/forma-sn.jpg);
+    background-image: url("../assets/wallpapers/forma-sn.jpg");
     background-size: cover;
     transition: all 0.5s;
 }
@@ -218,7 +218,7 @@ body {
     background-color: #1d1d1d;
     width: 100%;
     border-radius: 3px;
-    background-image: url(/assets/wallpapers/forma-sti.jpg);
+    background-image: url("../assets/wallpapers/forma-sti.jpg");
     background-size: cover;
     transition: all .3s;
 }
@@ -238,7 +238,7 @@ body {
 
 .experience h1{
     color: #fff;
-    font-size: 45px;
+    font-size: 42px;
 }
 
 .exp-supercontainer{
@@ -252,7 +252,7 @@ body {
 }
 
 .exp-title h2{
-    font-size: 25px;
+    font-size: 23px;
 }
 
 .exp-title span{
@@ -260,7 +260,7 @@ body {
 }
 
 .experience p{
-    font-size: 20px;
+    font-size: 19px;
     text-align: justify;
     line-height: 35px;
     font-family: 'Poppins', sans-serif;
@@ -279,7 +279,7 @@ body {
     background-color: #101010;
     width: 100%;
     border-radius: 3px;
-    background-image: url(/assets/icons/small-lcr.png);
+    background-image: url("../assets/icons/small-lcr.png");
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: 50%;
@@ -295,7 +295,7 @@ body {
     background-color: #101010;
     width: 100%;
     border-radius: 3px;
-    background-image: url(/assets/icons/icon-xankom.png);
+    background-image: url("../assets/icons/icon-xankom.png");
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: 50%;

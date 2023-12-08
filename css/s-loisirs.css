@@ -110,7 +110,7 @@ body {
     height: 595px;
     border-radius: 3px;
     width: 50%;
-    background-image: url(/assets/wallpapers/guitare.jpg);
+    background-image: url("../assets/wallpapers/guitare.jpg");
     background-size: cover;
 }
 
@@ -119,7 +119,7 @@ body {
     height: 595px;
     border-radius: 3px;
     width: 50%;
-    background-image: url(/assets/wallpapers/laptop.jpg);
+    background-image: url("../assets/wallpapers/laptop.jpg");
     background-size: cover;
 }
 
@@ -213,4 +213,24 @@ body {
 .italie-images img{
     width: 450px;
     border-radius: 2px;
+}
+
+/* ===== FOOTER ===== */
+
+.footer p{
+    font-size: 15px;
+    color: #fff;
+}
+
+.footer-credits{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo{
+    width: 150px;
 }
