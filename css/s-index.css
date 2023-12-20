@@ -78,8 +78,48 @@ body {
     filter: brightness(130%);
 }
 
+/* MENU BURGER */
+.header-burger{
+    display: none;
+    width: 100%;
+}
+
+.header-burger-container{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    transition: all 0.4s;
+}
+
+.header-burger img{
+    width: 80px;
+}
+
+.header-burger-items{
+    text-align: center;
+    display: none;
+}
+
+.nav-burger ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.burger-item a{
+    font-size: 5.5vw;   
+    text-decoration: none;
+    color: #fff;
+}
+
+#burger-button{
+    cursor: pointer;
+}
+
 /* ===== PRESENTATION ===== */
-.container1_1{
+.container1{
     height: 720px;
     color: #fff;
 }
@@ -158,13 +198,13 @@ body {
 }
 
 /* ===== CARDS ABOUT ===== */
-.container1{
+.container2{
     height: 970px;
     background-color: #101010;
     padding: 50px;
 }
 
-.container1 h1{
+.container2 h1{
     text-align: center;
     color: #fff;
     font-size: 45px;
@@ -178,18 +218,20 @@ body {
     grid-row-gap: 0px;
     padding: 50px;
     height: 750px;
+    transition: all 0.5s;
 }
 
 .text-box1, .text-box2, .text-box3{
     border-radius: 3px;
     backdrop-filter: brightness(50%);
     color:#fff;
-    height: 100px;
+    height: 80px;
+    align-items: center;
     transition: all 0.5s;
 }
 
 .card-container h2{
-    margin-top: 550px;
+    margin-top: 570px;
     font-size: 38px;
     padding: 5px;
     transition: all 0.5s;
@@ -212,7 +254,7 @@ body {
     text-align: center;
     padding: 20px;
     box-shadow: 0 0px 25px #283caa;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 /* === CARD 2 === */
@@ -224,7 +266,7 @@ body {
     text-align: center;
     padding: 20px;
     box-shadow: 0 0px 25px #283caa;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
 /* === CARD 3 === */
@@ -235,9 +277,10 @@ body {
     text-align: center;
     padding: 20px;
     box-shadow: 0 0px 25px #283caa;
-    transition: 0.5s;
+    transition: all 0.5s;
 }
 
+@media only screen and (min-width: 1000px){
 /*=== HOOVERS COMMUNS === */
 .card1:hover, .card2:hover, .card3:hover{
     transform:scale(1.1)
@@ -258,6 +301,7 @@ body {
 
 .card2:hover .button-card, .card3:hover .button-card{
     opacity: 100;
+}
 }
 
 /* ==== BUTTON CARD ==== */
@@ -313,7 +357,6 @@ body {
 }
 
 .footer-credits{
-    width: 100%;
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -325,4 +368,109 @@ body {
     width: 150px;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== RESPONSIVE TELEPHONE===== */
+@media only screen and (max-width: 500px){
+    body {
+        background: linear-gradient(100deg, rgba(0,0,0,1) 0%, rgba(65,65,65,1) 100%);
+    }
+
+    .header-area{
+        display: none;
+    }
+    .header-burger{
+        display: contents;
+    }
+
+    .container1{
+        margin-top: 40px;
+        height: 530px;
+    }
+
+    .text-container{
+        margin-top: 0;
+        margin-left: 0;
+        text-align: center;
+        font-family: Montserrat,sans-serif;
+    }
+
+    .text-container h1{
+        font-size: 15.5vw;
+    }
+
+    .text-container h2{
+        font-size: 7.5vw;
+    }
+
+    .text-container span{
+        font-size: 6.5vw;
+    }
+
+    /* === BUTTON ABOUT === */
+    .buttonabout{
+        margin-top: 70px;
+        width: 70%;
+    }
+
+    .buttonabout span{
+        font-size: 6.5vw;
+        color: #fff;
+    }
+
+    /* ===== CARDS ABOUT ===== */
+    .container2{
+        background: none;
+        height: 1800px;
+        padding: 10px;
+    }
+    .container2 h1{
+        font-size: 10vw;
+    }
+
+    .card-container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        height: 1660px;
+        gap: 80px;
+    }
+
+    .card-container h2{
+        margin-top: 0px;
+        font-size: 8.5vw;
+        padding: 5px;
+    }
+    
+    .card-container p{
+        margin-top: 0px;
+        font-size: 4.7vw;
+        padding: 8px;
+        opacity: 100;
+        cursor: default;
+    }
+
+    .card1, .card2, .card3{
+        height: 500px;
+    }
+
+    .text-box1, .text-box2, .text-box3{
+        height: 100%;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer p{
+        font-size: 13px;
+    }
+
+    .footer-credits{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-logo{
+        width: 80px;
+    }
+}
