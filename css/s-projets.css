@@ -213,7 +213,7 @@ body {
 
 /* ===== FOOTER ===== */
 .footer p{
-    font-size: 15px;
+    font-size: 12px;
     color: #fff;
 }
 
@@ -221,12 +221,12 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 8px;
     align-items: center;
     text-align: center;
 }
 
 .footer-logo{
-    width: 150px;
+    width: 80px;
 }
     
