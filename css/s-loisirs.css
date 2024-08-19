@@ -16,12 +16,13 @@ body {
     line-height: 1.714286;
     font-family: Montserrat,sans-serif;
     font-weight: 400;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    /*background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);*/
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(49, 54, 71) 0%, rgb(0, 0, 0) 99.4%);
 }
 
 .header-area{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header-container {
@@ -50,7 +51,7 @@ body {
 }
 
 .nav-button a{
-    font-size: 20px;
+    font-size: 23px;
     letter-spacing: 0.5px;
     color: #fff;
     text-decoration: none;
@@ -58,19 +59,19 @@ body {
 }
 
 .nav-button a:hover{
-    color: #283caa;
+    color: #4b75ff;
     filter: brightness(130%);
 }
 
 .nav-button-active a{
-    font-size: 20px;
+    font-size: 23px;
     letter-spacing: 0.5px;
-    color: #283caa; 
+    color: #4b75ff; 
     text-decoration: none;
 }
 
 .header-right img{
-    width: 50px;
+    width: 60px;
     transition: all .15s;
 }
 
@@ -84,7 +85,7 @@ body {
     padding: 50px;
     height: 865px;
     color: #fff;
-    background-color:  #101010;
+    background-color:  #0f131f;
 }
 
 .loisirs span{
@@ -158,7 +159,7 @@ body {
     padding: 50px;
     gap: 50px;
     color: #fff;
-    background-color: #1d1d1d;
+    background-color: #171e31;
 }
 
 /* ==== ITALIE ==== */
@@ -178,14 +179,14 @@ body {
 .italie-container1{
     padding: 30px;
     width: 50%;
-    background-color: #101010;
+    background-color: #0f131f;
     border-radius: 2px;
 }
 
 .italie-container2{
     padding: 30px;
     width: 50%;
-    background-color: #101010;
+    background-color: #0f131f;
     border-radius: 2px;
 }
 
@@ -195,7 +196,7 @@ body {
 
 .italie-container1 h2{
     text-align: center;
-    color: #283caa;
+    color: #4b75ff;
     font-size: 25px;
 }
 
@@ -234,20 +235,20 @@ body {
 .vietnam-container1{
     padding: 30px;
     width: 50%;
-    background-color: #101010;
+    background-color: #0f131f;
     border-radius: 2px;
 }
 
 .vietnam-container2{
     padding: 30px;
     width: 50%;
-    background-color: #101010;
+    background-color: #0f131f;
     border-radius: 2px;
 }
 
 .vietnam-container1 h2{
     text-align: center;
-    color: #283caa;
+    color: #4b75ff;
     font-size: 25px;
 }
 

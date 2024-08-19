@@ -15,12 +15,13 @@ body {
     line-height: 1.714286;
     font-family: Montserrat,sans-serif;
     font-weight: 400;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    /*background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);*/
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(49, 54, 71) 0%, rgb(0, 0, 0) 99.4%);
 }
 
 .header-area{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header-container {
@@ -49,7 +50,7 @@ body {
 }
 
 .nav-button a{
-    font-size: 20px;
+    font-size: 23px;
     letter-spacing: 0.5px;
     color: #fff;
     text-decoration: none;
@@ -57,19 +58,19 @@ body {
 }
 
 .nav-button a:hover{
-    color: #283caa;
+    color: #4b75ff;
     filter: brightness(130%);
 }
 
 .nav-button-active a{
-    font-size: 20px;
+    font-size: 23px;
     letter-spacing: 0.5px;
-    color: #283caa; 
+    color: #4b75ff; 
     text-decoration: none;
 }
 
 .header-right img{
-    width: 50px;
+    width: 60px;
     transition: all .15s;
 }
 
@@ -80,28 +81,28 @@ body {
 
 /* ===== PRESENTATION ===== */
 .container1_1{
-    height: 720px;
+    height: 710px;
     color: #fff;
 }
 
 .text-container{
-    margin-top: 200px;
-    margin-left: 250px;
+    margin-top: 150px;
+    margin-left: 170px;
     text-align: left;
     font-family: Montserrat,sans-serif;
 }
 
 .text-container h1{
     margin-left: -8px;
-    font-size: 7rem;
+    font-size: 6rem;
 }
 
 .text-container h2{
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .text-span{
-    color:#283caa;
+    color:#4b75ff;
 }
 
 /* === BUTTON === */
@@ -146,10 +147,10 @@ body {
     border-radius: inherit;
     background: linear-gradient(
       82.3deg,
-      rgb(28, 40, 141) 10.8%,
-      #32528F 94.3%
+      rgb(35, 43, 114) 10.8%,
+      #4b75ff 94.3%
     );
-    transition: all 0.5s;
+    transition: all 0.4s;
 }
 
 .buttonabout:hover{
@@ -211,7 +212,7 @@ body {
     background-position: -120px;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 0px 25px #283caa;
+    box-shadow: 0 0px 25px #4b75ff;
     transition: 0.5s;
 }
 
@@ -223,7 +224,7 @@ body {
     background-position-x: -135px;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 0px 25px #283caa;
+    box-shadow: 0 0px 25px #4b75ff;
     transition: 0.5s;
 }
 
@@ -234,7 +235,7 @@ body {
     background-size: cover;
     text-align: center;
     padding: 20px;
-    box-shadow: 0 0px 25px #283caa;
+    box-shadow: 0 0px 25px #4b75ff;
     transition: 0.5s;
 }
 
@@ -268,7 +269,7 @@ body {
     padding: 10px 24px;
     font-size: 18px;
     color: #fff;
-    border: 4px solid #283caa;
+    border: 4px solid #4b75ff;
     border-radius: 34px;
     background-color: transparent;
     font-weight: 600;
@@ -287,7 +288,7 @@ body {
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: #283caa;
+    background-color: #4b75ff;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -298,7 +299,7 @@ body {
 .button-card:hover {
     color: #fff;
     scale: 1.1;
-    box-shadow: 0 0px 20px #14216e;
+    box-shadow: 0 0px 20px #1d2e64;
     border: 0px;
 }
 

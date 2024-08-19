@@ -16,12 +16,13 @@ body {
     line-height: 1.714286;
     font-family: Montserrat,sans-serif;
     font-weight: 400;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    /*background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);*/
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(49, 54, 71) 0%, rgb(0, 0, 0) 99.4%);
 }
 
 .header-area{
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header-container {
@@ -50,7 +51,7 @@ body {
 }
 
 .nav-button a{
-    font-size: 20px;
+    font-size: 23px;
     letter-spacing: 0.5px;
     color: #fff;
     text-decoration: none;
@@ -58,19 +59,19 @@ body {
 }
 
 .nav-button a:hover{
-    color: #283caa;
+    color: #4b75ff;
     filter: brightness(130%);
 }
 
 .nav-button-active a{
-    font-size: 20px;
+    font-size: 23px;
     letter-spacing: 0.5px;
-    color: #283caa; 
+    color: #4b75ff; 
     text-decoration: none;
 }
 
 .header-right img{
-    width: 50px;
+    width: 60px;
     transition: all .15s;
 }
 
@@ -78,6 +79,8 @@ body {
     transform: translateY(-3px);
     filter: brightness(130%);
 }
+
+/* === LINKEDIN === */
 
 .linkedin-container h3{
     font-size: 20px;
@@ -92,15 +95,16 @@ body {
 
 /* LINKEDIN */
 .supercontainer-contacts{
-    height: 865px;
+    height: 820px;
     display: flex;
     justify-content: center;
     padding: 50px;
+    gap: 50px;
 }
 
 .supercontainer-linkedin{
-    margin-top: 100px;
-    height: 330px;
+    margin-top: 190px;
+    height: 300px;
     background-color: #38434f;
     color: #fff;
     border-radius: 10px;
@@ -123,7 +127,7 @@ body {
 
 .linkedin-photo{
     width: 130px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 .button-container{
@@ -156,6 +160,58 @@ body {
 .button-linkedin:active {
     background: #09223b;
     color: rgb(255, 255, 255, .7);
+}
+
+/* === CV PDF ===*/
+.supercontainer-cv {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+.supercontainer-cv img {
+    width: 600px;
+    height: 100%;
+    display: block;
+    border: 2px solid #4b75ff;
+}
+
+.cv-download-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #4b75ffe0;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.2s;
+    z-index: 1;
+}
+
+.cv-download-btn:hover{
+    background-color: #3564ff;
+    transition: all 0.15s;
+}
+
+.supercontainer-cv:hover .cv-download-btn {
+    opacity: 1;
+}
+.supercontainer-cv::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.452);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.supercontainer-cv:hover::after {
+    opacity: 1;
 }
 
 /* ===== FOOTER ===== */
